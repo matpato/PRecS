@@ -1,0 +1,203 @@
+:root {
+    --primary: #2563eb;       
+    --primary-hover: #1d4ed8; 
+    --bg-color: #f3f4f6;      
+    --card-bg: #ffffff;       
+    --text-main: #1f2937;     
+    --border: #e5e7eb;        
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    color: var(--primary);
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+header p {
+    color: #6b7280;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* INPUTS GRID */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+input[type="text"], 
+input[type="number"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background: #fff;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* --- SLIDER STYLES (Specifici per la tua richiesta) --- */
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8fafc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    cursor: pointer;
+    accent-color: var(--primary); /* Colora il pallino di blu */
+    height: 6px;
+}
+
+.slider-value {
+    font-weight: bold;
+    color: var(--primary);
+    min-width: 35px;
+    text-align: right;
+}
+
+/* BUTTON */
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* TABLE */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #f8fafc;
+    text-align: left;
+    padding: 15px;
+    font-weight: 700;
+    color: #4b5563;
+    border-bottom: 2px solid var(--border);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: #f0f9ff;
+}
+
+/* CONFIDENCE BAR */
+.confidence-container {
+    width: 100px;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.confidence-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+footer {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
