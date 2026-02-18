@@ -1,6 +1,30 @@
 <div id="top"></div>
 
 <br />
+<div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+        <a href="https://ccitalia.pt/" target="_blank">
+            <img src="./images/cameradocomercio.jpeg" alt="Camera do Comercio logo" style="width: 400px; height: auto;">
+        </a>
+    </div>
+    <div style="flex: 1;">
+        <a href="https://istitutovolta.edu.it/" target="_blank">
+            <img src="./images/volta.jpeg" alt="Volta logo" style="width: 400px; height: auto;">
+        </a>
+    </div>
+    <div style="flex: 1;">
+        <a href="https://www.isel.pt/" target="_blank">
+            <img src="./images/isel.png" alt="ISEL logo" style="width: 400px; height: auto;">
+        </a>
+    </div>
+</div>
+
+## Overview
+
+Drug Recommender is a pharmaceutical decision support system designed to bridge the gap between patient experiences and informed clinical choices. Unlike simple classification systems based on arithmetic averages, this application implements a Bayesian Ranking algorithm to analyze medical review datasets.
+
+The system processes user-inputted symptoms or selected conditions, querying a historical dataset to return drug suggestions ordered not just by score, but by statistical reliability. The primary objective is to mitigate "small sample size" bias—where a medication with a single perfect review outperforms an established drug with thousands of positive ratings—by offering users a visual and immediate "Confidence" metric.
+<br />
 <div align="center">
     <h2>Drug Recommender</h2>
     <p>
@@ -59,11 +83,25 @@ drug-recommender/
 └── requirements.txt             # Python dependencies
 ```
 
-## About The Project
+## Key Features
 
-**Drug Recommender** is a web application designed to suggest medications based on specific medical conditions or symptoms described by the user.
+The project distinguishes itself through the integration of statistical analysis and a reactive user interface. The core functionalities include:
 
-The core of the system is a **Bayesian Ranking** algorithm. Unlike simple averages, this algorithm weighs review scores against the number of votes. This ensures that a drug with a single 10/10 review does not rank higher than a drug with a 9/10 average across thousands of reviews, providing a more reliable metric for users.
+ **Bayesian Ranking Algorithm (Weighted Rating)**
+The core of the system is a weighted average formula that balances the mean rating (R) with the volume of reviews (v).
+The system calculates a score that penalizes drugs with insufficient data and rewards those with established consensus, utilizing a smoothing parameter (m) based on the global dataset average (C).
+
+ **Semantic Symptom Analysis**
+The application goes beyond manual disease selection. It includes a symptom mapping engine (CONDITION_SYNONYMS) that translates natural language user input (e.g., "sad", "panicked", "hurts") into standardized medical conditions (e.g., Depression, Anxiety, Pain), allowing for a more intuitive search experience.
+
+ **"Confidence" Visualization**
+Beyond numerical ranking, the interface provides immediate visual feedback via Confidence Bars. These bars dynamically change color (Red/Yellow/Green) based on the statistical solidity of the result , helping the user instantly distinguish between a suggestion based on anecdotal evidence and one that is scientifically significant.
+
+ **Real-Time Dynamic Filtering**
+Powered by a lightweight Vanilla JS frontend, users can refine results instantly using sliders to set the minimum number of reviews required. The system recalculates rankings client-side without requiring a page reload, offering a seamless user experience.
+
+ **High-Performance Backend Architecture**
+Built on FastAPI and Pandas, the backend is optimized to process and filter large CSV datasets in milliseconds, exposing RESTful APIs that strictly separate calculation logic from data presentation.
 
 ### Built With
 
@@ -98,7 +136,7 @@ To get a local copy up and running, follow these simple steps.
     ```
 
 3.  **Data Setup**
-    Ensure the dataset file `df_recovered_with_cleaned_names.csv` is placed in the root directory of the project.
+    Ensure the dataset file [`df_recovered_with_cleaned_names.csv`](https://github.com/matpato/drug-recommender/releases/download/dataset.csv/df_recovered_with_cleaned_names.csv) is placed in the root directory of the project.
     > **Note:** This file is required for the application to function. You will be able to find it inside the 'Releases' section of this repo.
 
 4. **Create Virtual Environment**
@@ -133,7 +171,8 @@ To get a local copy up and running, follow these simple steps.
 3.  **Search for Drugs**
     * **By Symptom:** Type symptoms (e.g., "severe headache") in the text box.
     * **By Condition:** Select a condition from the dropdown menu (e.g., "Depression", "Acne").
-    * **Filter:** Use the sliders to filter results by minimum number of reviews.
+    * **Filter:** Use the sliders to filter results by minimum and maximum number of reviews.
+    * **By recency:** Use the list to choose between different recencies.
 
 ## Configuration
 
@@ -148,6 +187,10 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 * **Cesare Gasparini**
 * **Hejzell Isufi**
 * **Bahae Taifi**
+
+## Acknowledgement
+
+We would like to express our sincere gratitude to the **Italian Chamber of Commerce in Portugal** (*Camera di Commercio Italiana per il Portogallo*) for the possibility to take part in the realization of this project.
 
 ## How to Cite
 
