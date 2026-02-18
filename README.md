@@ -1,23 +1,25 @@
 <div id="top"></div>
 
 <br />
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
+<table align="center">
+  <tr>
+    <td align="center">
         <a href="https://ccitalia.pt/" target="_blank">
-            <img src="./images/cameradocomercio.jpeg" alt="Camera do Comercio logo" style="width: 200px; height: auto;">
+            <img src="./images/cameradocomercio.jpeg" alt="Camera do Comercio logo" width="200">
         </a>
-    </div>
-    <div style="flex: 1;">
+    </td>
+    <td align="center">
         <a href="https://istitutovolta.edu.it/" target="_blank">
-            <img src="./images/volta.jpeg" alt="Volta logo" style="width: 200px; height: auto;">
+            <img src="./images/volta.jpeg" alt="Volta logo" width="200">
         </a>
-    </div>
-    <div style="flex: 1;">
+    </td>
+    <td align="center">
         <a href="https://www.isel.pt/" target="_blank">
-            <img src="./images/isel.png" alt="ISEL logo" style="width: 200px; height: auto;">
+            <img src="./images/isel.png" alt="ISEL logo" width="200">
         </a>
-    </div>
-</div>
+    </td>
+  </tr>
+</table>
 
 ## Overview
 
