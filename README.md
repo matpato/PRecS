@@ -4,17 +4,17 @@
 <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
         <a href="https://ccitalia.pt/" target="_blank">
-            <img src="./images/cameradocomercio.jpeg" alt="Camera do Comercio logo" style="width: 400px; height: auto;">
+            <img src="./images/cameradocomercio.jpeg" alt="Camera do Comercio logo" style="width: 200px; height: auto;">
         </a>
     </div>
     <div style="flex: 1;">
         <a href="https://istitutovolta.edu.it/" target="_blank">
-            <img src="./images/volta.jpeg" alt="Volta logo" style="width: 400px; height: auto;">
+            <img src="./images/volta.jpeg" alt="Volta logo" style="width: 200px; height: auto;">
         </a>
     </div>
     <div style="flex: 1;">
         <a href="https://www.isel.pt/" target="_blank">
-            <img src="./images/isel.png" alt="ISEL logo" style="width: 400px; height: auto;">
+            <img src="./images/isel.png" alt="ISEL logo" style="width: 200px; height: auto;">
         </a>
     </div>
 </div>
