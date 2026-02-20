@@ -178,7 +178,7 @@ To get a local copy up and running, follow these simple steps.
     * **By recency:** Use the list to choose between different recencies.
 
 ## Tutorial
-https://github.com/matpato/drug-recommender/raw/refs/heads/main/Tutorial_DrugRecommender.mp4
+![](https://github.com/matpato/drug-recommender/raw/refs/heads/main/Tutorial_DrugRecommender.mp4)
 
 ## Configuration
 
