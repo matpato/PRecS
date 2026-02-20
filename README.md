@@ -177,6 +177,10 @@ To get a local copy up and running, follow these simple steps.
     * **Filter:** Use the sliders to filter results by minimum and maximum number of reviews.
     * **By recency:** Use the list to choose between different recencies.
 
+## Tutorial
+<video src="./Tutorial_DrugRecommender.mp4" controls title="Tutorial" style="max-width: 100%;"> </video>
+
+
 ## Configuration
 
 You can customize the ranking logic and application settings in `main.py`.
