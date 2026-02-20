@@ -178,6 +178,7 @@ To get a local copy up and running, follow these simple steps.
     * **By recency:** Use the list to choose between different recencies.
 
 ## Tutorial
+<br />
 <video src="./Tutorial_DrugRecommender.mp4" controls title="Tutorial" style="max-width: 100%;"> </video>
 
 
