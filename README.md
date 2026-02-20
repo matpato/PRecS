@@ -21,6 +21,7 @@
   </tr>
 </table>
 
+
 ## Overview
 
 Drug Recommender is a pharmaceutical decision support system designed to bridge the gap between patient experiences and informed clinical choices. Unlike simple classification systems based on arithmetic averages, this application implements a Bayesian Ranking algorithm to analyze medical review datasets.
