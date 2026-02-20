@@ -178,7 +178,8 @@ To get a local copy up and running, follow these simple steps.
     * **By recency:** Use the list to choose between different recencies.
 
 ## Tutorial
-![](https://github.com/matpato/drug-recommender/raw/refs/heads/main/Tutorial_DrugRecommender.mp4)
+<video src="https://raw.githubusercontent.com/YourUsername/YourRepo/main/video.mp4" controls style="max-width: 100%;">
+</video>
 
 ## Configuration
 
