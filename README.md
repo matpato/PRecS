@@ -192,8 +192,9 @@ To get a local copy up and running, follow these simple steps.
     * **By recency:** Use the list to choose between different recencies.
 
 ## Tutorial
-<video src="https://github.com/matpato/PRecS/raw/refs/heads/main/Tutorial_DrugRecommender.mp4" controls style="max-width: 100%;">
+<video src="https://github.com/matpato/PRecS/blob/main/Tutorial_DrugRecommender.mp4" controls style="max-width: 100%;">
 </video>
+https://github.com/matpato/PRecS/blob/main/Tutorial_DrugRecommender.mp4
 
 ## Configuration
 
