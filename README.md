@@ -1,82 +1,96 @@
-<div id="top"></div>
+<div align="center">
 
-<br />
-<table align="center">
+<!-- LOGOS -->
+
+<table border="0" cellspacing="0" cellpadding="20">
   <tr>
-    <td align="center">
-        <a href="https://ccitalia.pt/" target="_blank">
-            <img src="./images/cameradocomercio.jpeg" alt="Camera do Comercio logo" width="200">
-        </a>
+    <td align="center" valign="middle">
+      <a href="https://www.isel.pt/" target="_blank">
+        <img src="./images/isel.png" height="120" alt="ISEL"/><br/>
+        <sub><b>Instituto Superior de<br/>Engenharia de Lisboa</b></sub>
+      </a>
     </td>
-    <td align="center">
-        <a href="https://istitutovolta.edu.it/" target="_blank">
-            <img src="./images/volta.jpeg" alt="Volta logo" width="200">
-        </a>
+    <td align="center" valign="middle">
+      <a href="https://ccitalia.pt/" target="_blank">
+        <img src="./images/cameradocomercio.jpeg" height="90" alt="Câmara do Comércio Italo-Portuguesa"/><br/>
+        <sub><b>Câmara do Comércio<br/>Italo-Portuguesa</b></sub>
+      </a>
     </td>
-    <td align="center">
-        <a href="https://www.isel.pt/" target="_blank">
-            <img src="./images/isel.png" alt="ISEL logo" width="200">
-        </a>
+    <td align="center" valign="middle" width="60">
+      <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" height="60"/>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://istitutovolta.edu.it/" target="_blank">
+        <img src="./images/volta.jpeg" height="90" alt="Istituto Volta"/><br/>
+        <sub><b>Istituto Tecnico<br/>Alessandro Volta</b></sub>
+      </a>
+    </td>
+     <td align="center" valign="middle" width="60">
+      <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" height="60"/>
     </td>
   </tr>
 </table>
-
-
-## Overview
-
-Drug Recommender is a pharmaceutical decision support system designed to bridge the gap between patient experiences and informed clinical choices. Unlike simple classification systems based on arithmetic averages, this application implements a Bayesian Ranking algorithm to analyze medical review datasets.
-
-The system processes user-inputted symptoms or selected conditions, querying a historical dataset to return drug suggestions ordered not just by score, but by statistical reliability. The primary objective is to mitigate "small sample size" bias—where a medication with a single perfect review outperforms an established drug with thousands of positive ratings—by offering users a visual and immediate "Confidence" metric.
-<br />
-<div align="center">
-    <h2>Drug Recommender</h2>
-    <p>
-        <a href="#usage">View Demo</a>
-        ·
-        <a href="#issues">Report Bug</a>
-        ·
-        <a href="#issues">Request Feature</a>
-    </p>
 </div>
+
+<br />
+<!-- TITLE -->
+<h1>PRecS</h1>
+<h3>Pharmaceutical Recommender with Evidence-based Clinical Support</h3>
+
+<br/>
+<!-- BADGES -->
 
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+<br/>
+
+<!-- ACTION LINKS -->
+<p>
+  <a href="#usage">View Demo</a>
+  ·
+  <a href="#issues">Report Bug</a>
+  ·
+  <a href="#issues">Request Feature</a>
+</p>
+
+</div>
+
+## Overview
+
+**PRecS** is a pharmaceutical decision support system designed to bridge the gap between patient experiences and informed clinical choices.
+
 <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#configuration">Configuration</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#authors">Authors</a></li>
-    <li><a href="#how-to-cite">How to Cite</a></li>
-  </ol>
+<summary>Table of Contents</summary>
+<ol>
+  <li><a href="#about-the-project">About The Project</a></li>
+  <li><a href="#getting-started">Getting Started</a>  </li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#configuration">Configuration</a></li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#authors">Authors</a></li>
+  <li><a href="#how-to-cite">How to Cite</a></li>
+</ol>
 </details>
+
+
+## About The Project
+
+**PRecS** is a pharmaceutical decision support system designed to bridge the gap between patient experiences and informed clinical choices. Unlike simple classification systems based on arithmetic averages, this application implements a Bayesian Ranking algorithm to analyze medical review datasets.
+
+The system processes user-inputted symptoms or selected conditions, querying a historical dataset to return drug suggestions ordered not just by score, but by statistical reliability. The primary objective is to mitigate "small sample size" bias — where a medication with a single perfect review outperforms an established drug with thousands of positive ratings — by offering users a visual and immediate **Confidence** metric.
 
 ## Project Structure
 
 The project is organized into several key modules, each responsible for specific aspects of the data processing pipeline:
 
 ```
-drug-recommender/
+precs/
 ├── webpage/                      # Resources needed by webpage to function properly.
-│   └── style.css/                      # CSS for index.html
-│   └── script.js/                      # JS that connects API with Webpage
+│   └── style.css/                # CSS for index.html
+│   └── script.js/                # JS that connects API with Webpage
 │   
 ├── .env 
 ├── main.py                      # Main python project file
@@ -129,8 +143,8 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository**
     ```sh
-    git clone [https://github.com/your-username/drug-recommender.git](https://github.com/your-username/drug-recommender.git)
-    cd drug-recommender
+    git clone [https://github.com/matpato/PRecS.git](https://github.com/matpato/PRecS.git)
+    cd PRecS
     ```
 
 2.  **Install dependencies**
@@ -139,7 +153,7 @@ To get a local copy up and running, follow these simple steps.
     ```
 
 3.  **Data Setup**
-    Ensure the dataset file [`df_recovered_with_cleaned_names.csv`](https://github.com/matpato/drug-recommender/releases/download/dataset.csv/df_recovered_with_cleaned_names.csv) is placed in the root directory of the project.
+    Ensure the dataset file [`df_recovered_with_cleaned_names.csv`](https://github.com/matpato/PRecS/releases/download/dataset.csv/df_recovered_with_cleaned_names.csv) is placed in the root directory of the project.
     > **Note:** This file is required for the application to function. You will be able to find it inside the 'Releases' section of this repo.
 
 4. **Create Virtual Environment**
@@ -178,7 +192,7 @@ To get a local copy up and running, follow these simple steps.
     * **By recency:** Use the list to choose between different recencies.
 
 ## Tutorial
-<video src="https://github.com/matpato/drug-recommender/raw/refs/heads/main/Tutorial_DrugRecommender.mp4" controls style="max-width: 100%;">
+<video src="https://github.com/matpato/PRecS/raw/refs/heads/main/Tutorial_DrugRecommender.mp4" controls style="max-width: 100%;">
 </video>
 
 ## Configuration
@@ -191,9 +205,14 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 
 ## Authors
 
-* **Cesare Gasparini**
-* **Hejzell Isufi**
-* **Bahae Taifi**
+| Role | Name | Institution |
+|------|------|-------------|
+| Student | Cesare Gasparini | [Istituto Volta](https://istitutovolta.edu.it/)|
+| Student | Hejzell Isufi | [Istituto Volta](https://istitutovolta.edu.it/) |
+| Student | Bahae Taifi | [Istituto Volta](https://istitutovolta.edu.it/) |
+| Supervisor | Prof. Dr. Matilde Pato | [ISEL](https://www.isel.pt/) |
+| Supervisor | Prof. Dr. Nuno Datia | [ISEL](https://www.isel.pt/)  |
+
 
 ## Acknowledgement
 
@@ -201,14 +220,14 @@ We would like to express our sincere gratitude to the **Italian Chamber of Comme
 
 ## How to Cite
 
-If you use **Drug Recommender** in your work, please cite it as follows:
+If you use **PRecS** in your work, please cite it as follows:
 
 ```bibtex
-@software{DrugRecommender2026,
-  author = {Gasparini Cesare, Isufi Hejzell and Taifi Bahae},
-  title = {Drug Recommender},
+@software{PRecS2026,
+  author = {Gasparini Cesare, Isufi Hejzell, Taifi Bahae, Nuno Datia and Matilde Pato},
+  title = {PRecS - Pharmaceutical Recommender with evidence-based clinical Support},
   year = {2026},
-  url = {[https://github.com/your-username/drug-recommender](https://github.com/your-username/drug-recommender)}
+  url = {[https://github.com/matpato/PRecS.git](https://github.com/matpato/PRecS.git)}
 }
 
 ```
