@@ -87,7 +87,7 @@ The system processes user-inputted symptoms or selected conditions, querying a h
 The project is organized into several key modules, each responsible for specific aspects of the data processing pipeline:
 
 ```
-precs/
+PRecS/
 ├── webpage/                      # Resources needed by webpage to function properly.
 │   └── style.css/                # CSS for index.html
 │   └── script.js/                # JS that connects API with Webpage
@@ -143,7 +143,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository**
     ```sh
-    git clone [https://github.com/matpato/PRecS.git](https://github.com/matpato/PRecS.git)
+    git clone https://github.com/matpato/PRecS.git
     cd PRecS
     ```
 
@@ -210,8 +210,8 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 | Student | Cesare Gasparini | [Istituto Volta](https://istitutovolta.edu.it/)|
 | Student | Hejzell Isufi | [Istituto Volta](https://istitutovolta.edu.it/) |
 | Student | Bahae Taifi | [Istituto Volta](https://istitutovolta.edu.it/) |
-| Supervisor | Prof. Dr. Matilde Pato | [ISEL](https://www.isel.pt/) |
-| Supervisor | Prof. Dr. Nuno Datia | [ISEL](https://www.isel.pt/)  |
+| Supervisor | Prof. Dr. Matilde Pato | [ISEL-IPL](https://www.isel.pt/) |
+| Supervisor | Prof. Dr. Nuno Datia | [ISEL-IPL](https://www.isel.pt/)  |
 
 
 ## Acknowledgement
@@ -227,7 +227,7 @@ If you use **PRecS** in your work, please cite it as follows:
   author = {Gasparini Cesare, Isufi Hejzell, Taifi Bahae, Nuno Datia and Matilde Pato},
   title = {PRecS - Pharmaceutical Recommender with evidence-based clinical Support},
   year = {2026},
-  url = {[https://github.com/matpato/PRecS.git](https://github.com/matpato/PRecS.git)}
+  url = {https://github.com/matpato/PRecS.git}
 }
 
 ```
